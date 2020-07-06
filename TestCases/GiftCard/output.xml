@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.7.2 on win32)" generated="20200705 19:17:04.339" rpa="false">
+<suite id="s1" name="TC GiftCard" source="C:\Users\arun\PycharmProjects\FlipcartRobot\TestCases\GiftCard\TC_GiftCard.robot">
+<test id="s1-t1" name="TC_GiftCard_005">
+<kw name="OpenBrowser and Maximize">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20200705 19:17:06.788" level="INFO">Opening browser 'Chrome' to base url 'https://www.flipkart.com/'.</msg>
+<status status="PASS" starttime="20200705 19:17:06.788" endtime="20200705 19:17:17.105"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200705 19:17:17.105" endtime="20200705 19:17:17.954"></status>
+</kw>
+<status status="PASS" starttime="20200705 19:17:06.788" endtime="20200705 19:17:17.955"></status>
+</kw>
+<kw name="Read_Element_Locator" library="UseDefinedKeywords">
+<arguments>
+<arg>Login.UserName_Text_BOX</arg>
+</arguments>
+<assign>
+<var>${UserName}</var>
+</assign>
+<kw name="Read Locator From JSON" library="Locators">
+<arguments>
+<arg>${jsonpath}</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20200705 19:17:17.962" level="INFO">${result} = xpath://input[@class='_2zrpKA _1dBPDZ']</msg>
+<status status="PASS" starttime="20200705 19:17:17.957" endtime="20200705 19:17:17.962"></status>
+</kw>
+<msg timestamp="20200705 19:17:17.963" level="INFO">${UserName} = xpath://input[@class='_2zrpKA _1dBPDZ']</msg>
+<status status="PASS" starttime="20200705 19:17:17.956" endtime="20200705 19:17:17.963"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${UserName}</arg>
+<arg>9560471005</arg>
+</arguments>
+<msg timestamp="20200705 19:17:17.965" level="INFO">Typing text '9560471005' into text field 'xpath://input[@class='_2zrpKA _1dBPDZ']'.</msg>
+<status status="PASS" starttime="20200705 19:17:17.964" endtime="20200705 19:17:18.726"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5 seconds</arg>
+</arguments>
+<msg timestamp="20200705 19:17:23.727" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200705 19:17:18.726" endtime="20200705 19:17:23.728"></status>
+</kw>
+<kw name="Read_Element_Locator" library="UseDefinedKeywords">
+<arguments>
+<arg>Login.Password_Text_BOX</arg>
+</arguments>
+<assign>
+<var>${Password}</var>
+</assign>
+<kw name="Read Locator From JSON" library="Locators">
+<arguments>
+<arg>${jsonpath}</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20200705 19:17:23.733" level="INFO">${result} = xpath://input[@class='_2zrpKA _3v41xv _1dBPDZ']</msg>
+<status status="PASS" starttime="20200705 19:17:23.731" endtime="20200705 19:17:23.734"></status>
+</kw>
+<msg timestamp="20200705 19:17:23.735" level="INFO">${Password} = xpath://input[@class='_2zrpKA _3v41xv _1dBPDZ']</msg>
+<status status="PASS" starttime="20200705 19:17:23.729" endtime="20200705 19:17:23.735"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Password}</arg>
+<arg>anil12345</arg>
+</arguments>
+<msg timestamp="20200705 19:17:23.738" level="INFO">Typing text 'anil12345' into text field 'xpath://input[@class='_2zrpKA _3v41xv _1dBPDZ']'.</msg>
+<status status="PASS" starttime="20200705 19:17:23.737" endtime="20200705 19:17:24.243"></status>
+</kw>
+<kw name="Read_Element_Locator" library="UseDefinedKeywords">
+<arguments>
+<arg>Login.Login_Button</arg>
+</arguments>
+<assign>
+<var>${Login_Button}</var>
+</assign>
+<kw name="Read Locator From JSON" library="Locators">
+<arguments>
+<arg>${jsonpath}</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20200705 19:17:24.248" level="INFO">${result} = xpath://form[@autocomplete='on']/div[3]/button</msg>
+<status status="PASS" starttime="20200705 19:17:24.246" endtime="20200705 19:17:24.248"></status>
+</kw>
+<msg timestamp="20200705 19:17:24.250" level="INFO">${Login_Button} = xpath://form[@autocomplete='on']/div[3]/button</msg>
+<status status="PASS" starttime="20200705 19:17:24.244" endtime="20200705 19:17:24.250"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Login_Button}</arg>
+</arguments>
+<msg timestamp="20200705 19:17:24.252" level="INFO">Clicking element 'xpath://form[@autocomplete='on']/div[3]/button'.</msg>
+<status status="PASS" starttime="20200705 19:17:24.251" endtime="20200705 19:17:24.495"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5 seconds</arg>
+</arguments>
+<msg timestamp="20200705 19:17:29.504" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200705 19:17:24.502" endtime="20200705 19:17:29.504"></status>
+</kw>
+<kw name="Read_Element_Locator" library="UseDefinedKeywords">
+<arguments>
+<arg>Login.GiftCard.Mouse_Over</arg>
+</arguments>
+<assign>
+<var>${Mouseover}</var>
+</assign>
+<kw name="Read Locator From JSON" library="Locators">
+<arguments>
+<arg>${jsonpath}</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20200705 19:17:29.511" level="INFO">${result} = xpath://div[text()='vivek']</msg>
+<status status="PASS" starttime="20200705 19:17:29.509" endtime="20200705 19:17:29.511"></status>
+</kw>
+<msg timestamp="20200705 19:17:29.512" level="INFO">${Mouseover} = xpath://div[text()='vivek']</msg>
+<status status="PASS" starttime="20200705 19:17:29.507" endtime="20200705 19:17:29.513"></status>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${Mouseover}</arg>
+</arguments>
+<msg timestamp="20200705 19:17:29.515" level="INFO">Simulating Mouse Over on element 'xpath://div[text()='vivek']'.</msg>
+<status status="PASS" starttime="20200705 19:17:29.514" endtime="20200705 19:17:29.860"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5 seconds</arg>
+</arguments>
+<msg timestamp="20200705 19:17:34.863" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200705 19:17:29.862" endtime="20200705 19:17:34.864"></status>
+</kw>
+<kw name="Read_Element_Locator" library="UseDefinedKeywords">
+<arguments>
+<arg>Login.GiftCard.GiftCard_Link</arg>
+</arguments>
+<assign>
+<var>${GiftCardLink}</var>
+</assign>
+<kw name="Read Locator From JSON" library="Locators">
+<arguments>
+<arg>${jsonpath}</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20200705 19:17:34.870" level="INFO">${result} = xpath://span[text()='Gift Cards']</msg>
+<status status="PASS" starttime="20200705 19:17:34.868" endtime="20200705 19:17:34.871"></status>
+</kw>
+<msg timestamp="20200705 19:17:34.872" level="INFO">${GiftCardLink} = xpath://span[text()='Gift Cards']</msg>
+<status status="PASS" starttime="20200705 19:17:34.865" endtime="20200705 19:17:34.872"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${GiftCardLink}</arg>
+</arguments>
+<msg timestamp="20200705 19:17:34.874" level="INFO">Clicking element 'xpath://span[text()='Gift Cards']'.</msg>
+<status status="PASS" starttime="20200705 19:17:34.873" endtime="20200705 19:17:37.240"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10 seconds</arg>
+</arguments>
+<msg timestamp="20200705 19:17:47.249" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200705 19:17:37.246" endtime="20200705 19:17:47.250"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>How do I buy / gift a Flipkart Gift Card?</arg>
+</arguments>
+<msg timestamp="20200705 19:17:47.324" level="INFO">Current page contains text 'How do I buy / gift a Flipkart Gift Card?'.</msg>
+<status status="PASS" starttime="20200705 19:17:47.253" endtime="20200705 19:17:47.324"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Terms &amp; Conditions</arg>
+</arguments>
+<msg timestamp="20200705 19:17:47.391" level="INFO">Current page contains text 'Terms &amp; Conditions'.</msg>
+<status status="PASS" starttime="20200705 19:17:47.326" endtime="20200705 19:17:47.391"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>FAQs</arg>
+</arguments>
+<msg timestamp="20200705 19:17:47.461" level="INFO">Current page contains text 'FAQs'.</msg>
+<status status="PASS" starttime="20200705 19:17:47.394" endtime="20200705 19:17:47.462"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>C:/Users/arun/PycharmProjects/FlipcartRobot/Screenshots/TC_GiftCard_005.png</arg>
+</arguments>
+<msg timestamp="20200705 19:17:48.082" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../Screenshots/TC_GiftCard_005.png"&gt;&lt;img src="../../Screenshots/TC_GiftCard_005.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200705 19:17:47.464" endtime="20200705 19:17:48.083"></status>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200705 19:17:48.083" endtime="20200705 19:17:49.701"></status>
+</kw>
+<doc>"User scrolled down to see FAQs and Terms &amp; Conditions"</doc>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="PASS" starttime="20200705 19:17:06.788" endtime="20200705 19:17:49.701" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200705 19:17:04.354" endtime="20200705 19:17:49.701"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="TC GiftCard">TC GiftCard</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

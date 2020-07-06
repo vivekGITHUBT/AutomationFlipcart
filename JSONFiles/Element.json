@@ -1,0 +1,65 @@
+{
+  "Login":
+    {
+      "UserName_Text_BOX":"xpath://input[@class='_2zrpKA _1dBPDZ']",
+      "Password_Text_BOX":"xpath://input[@class='_2zrpKA _3v41xv _1dBPDZ']",
+      "Login_Button": "xpath://form[@autocomplete='on']/div[3]/button",
+      "Request_OTP_Button": "xpath://button[text()='Request OTP']",
+      "Forgot_Link": "xpath://span[text()='Forgot?']",
+      "Remove_Login_Window": "xpath://button[@class='_2AkmmA _29YdH8']",
+      "SignUp":
+          {
+              "Click_Create_An_Account_Element": "xpath://a[text()='New to Flipkart? Create an account']",
+              "UserName_Text_Box": "xpath://input[@class='_2zrpKA _1dBPDZ']",
+              "Continue_Button": "xpath://button[@class='_2AkmmA _1LctnI _7UHT_c']",
+              "Existing User?Login_link": "xpath://span[text()='Existing User? Log in']",
+              "UserName_Text_BOX":"xpath://input[@class='_2zrpKA _1dBPDZ']"
+          },
+
+      "Cart":
+          {
+              "Click_Cart_Link": "xpath://span[text()='Cart']",
+              "Remove_Link": "xpath://div[@class='_12iFZG _3PG6Wd']/div/div/div/div/div/div[2]/div[2]/div[2]",
+              "Save_For_Later_Link": "xpath://div[@class='_12iFZG _3PG6Wd']/div/div/div/div/div/div[2]/div[2]/div[1]",
+              "Deliver_To_Section_Link": "xpath://div[@class='_1nWa4x']",
+              "Select_Address": "xpath://div[@class='_1g90e7']/div[1]/div/span",
+              "Delivery_pincode_TextBox": "xpath://input[@placeholder='Enter delivery pincode']",
+              "Check_Link": "xpath://span[text()='Check']"
+          },
+
+
+
+      "Orders":
+          {
+              "Mouse_Over": "xpath://div[text()='vivek']",
+              "Order_Link": "xpath://div[text()='Orders']",
+              "Delivered_Product": "xpath://span[contains(text(),'boAt PartyPal 20 15 W Bluetooth Party')]",
+              "Rate_&_Review_Product": "xpath://span[text()='Rate & Review Product']",
+              "Download_Invoice_Button": "xpath://button[@class='_2AkmmA _1qifsA _3c5Gic']",
+              "Need_Help": "xpath://span[text()='Need Help?']"
+
+
+          },
+      "GiftCard":
+          {
+              "Mouse_Over": "xpath://div[text()='vivek']",
+              "GiftCard_Link":"xpath://span[text()='Gift Cards']",
+              "Recievers_E-mail_ID_Textbox": "name:recipient-email[]",
+              "Recievers_Name_Textbox": "name:recipient-name[]",
+              "Cart_Value": "name:voucher-value[]",
+              "Buy_Gift_Card_Button": "xpath://button[@class='_2AkmmA _1dI9_5 _7UHT_c']",
+              "CORPORATE_REQUIREMENTS_Link": "xpath://div[text()='CORPORATE REQUIREMENTS']",
+              "First_Name_textbox": "name:firstName",
+              "Mobile_Number_Textbox": "name:mobile",
+              "E-mail_TextBox": "name:email",
+              "Location_Drop_Down":"xpath://select[@class='_3092M2 gLebrp _1rTGs8']",
+              "Submit_Details_Button": "xpath://button[text()='SUBMIT DETAILS']",
+              "ADD_A_GIFT_CARD_link": "xpath://span[text()='ADD A GIFT CARD']",
+              "Check_Gift_Card_Balance": "xpath://span[text()='Check Gift Card Balance']"
+
+
+
+          }
+    }
+
+}
